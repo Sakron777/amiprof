@@ -1,0 +1,206 @@
+.project {
+    margin: 77px 0 0 0;
+}
+
+.project__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 106px;
+
+    max-width: 1070px;
+
+    position: relative;
+
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+.project__item-one {
+    display: flex;
+    align-items: flex-end;
+    max-width: 390px;
+    margin-right: 152px;
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+}
+
+.project__item-date {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    color: $grey-100;
+    order: 2;
+
+}
+
+.project__item-two {
+    position: relative;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.project__item-block{
+    font-size: 100px;
+
+    max-width: 556px;
+    height: 312px;
+    background-color: $oren;
+
+    p{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @include breakpoint($mobile-76) {
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+
+.project__item-img{
+    @include breakpoint($mobile-76) {
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+
+.project__item-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 97px 0 0 59px;
+    max-width: 301px;
+
+
+    @include breakpoint($tablet-110) {
+        padding: 97px 0 0 20px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding: 0;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    @include breakpoint($mobile-76) {
+        max-width: 65%;
+
+    }
+
+
+}
+
+.project__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-right: 15px;
+
+    color: $black;
+
+    @include breakpoint($tablet-bp) {
+        padding: 30px 0 0 0;
+        text-align: center;
+    }
+}
+
+.project__item-pos{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.project__item-link {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    font-size: 0;
+    /*чтобы стрелки были по центу*/
+    color: transparent;
+
+    border: 0;
+    background: $oren;
+
+    position: relative;
+    border: 1px solid $oren  ;
+    img{
+        position: absolute;
+
+        top: 50%;
+        right: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+    &:hover{
+        background: $white;
+        border: 1px solid $oren ;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+
+
+
+.project__item-all {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    color: $black;
+    transition: all .3s;
+
+    img{
+        margin-left: 9px;
+    }
+
+    &:hover{
+        color: $oren;
+    }
+
+}

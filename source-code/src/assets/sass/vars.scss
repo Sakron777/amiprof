@@ -1,0 +1,51 @@
+$black: #000000;
+$black-100: #3E3E3D;
+$black-200: #2D2D2D;
+
+$white: #ffffff;
+$white-100: #E5E5E5;
+$white-300: #f2f2f2;
+
+$grey-50: #EDEEEF;
+$grey: #949494;
+$grey-100: #6F6F6E;
+$grey-200: #B1B1B0;
+$grey-300: #c4c4c4;
+$grey-400: #777E89;
+
+
+$oren: #DC911B;
+$oren-100: #fedda6;
+$oren-200: #FFE0B0;
+$oren-300: #DC911B;
+
+//тень навигации
+$ts: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+//ридиус
+$br5: 5px;
+
+//border
+$b-orange: 1px solid $oren;
+
+//bootstrap modal цвет оверлея
+$modal-backdrop-bg: #181818;
+$modal-backdrop-opacity: .8;
+
+//media
+
+$tablet-650: 1650px;
+$tablet-500: 1500px;
+$tablet-365: 1365px;
+$tablet-250: 1250px;
+$tablet-195: 1195px;
+$tablet-110: 1110px;
+$tablet-bp: 991px;
+$mobile-76: 767px;
+$mobile-bp: 700px;
+$mobile-64: 640px;
+$mobile-63: 630px;
+$mobile-56: 560px;
+$mobile-br: 450px;
+$mobile-32: 320px;

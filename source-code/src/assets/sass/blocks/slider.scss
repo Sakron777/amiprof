@@ -1,0 +1,322 @@
+.slider {
+
+    background-color: $black-100;
+    min-height: 756px;
+
+    @include breakpoint($mobile-76) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+.slider__pos {
+    position: relative;
+
+}
+
+.slider__inner {
+    display: flex;
+    align-items: center;
+
+
+    @include breakpoint($mobile-76) {
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+    }
+
+}
+
+.slider__block {
+    width: 62%;
+    margin: 215px 0 65px 0;
+
+    @include breakpoint($tablet-195) {
+        width: 50%;
+    }
+
+    @include breakpoint($mobile-76) {
+        max-width: 500px;
+
+        order: 1;
+        margin: 0px 0 100px 0;
+    }
+
+    @include breakpoint($mobile-56) {
+        max-width: 250px;
+
+    }
+}
+
+.slider__carusel {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slider__carusel-img {
+
+    margin-right: 47px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    @include breakpoint($tablet-110) {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.slider__right {
+    width: 50%;
+    position: relative;
+
+    @include breakpoint($mobile-76) {
+        width: 100%;
+
+    }
+}
+
+
+
+.slider__svg {
+    margin-left: -200px;
+
+    @include breakpoint($mobile-76) {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+        order: 2;
+    }
+
+    &--two{
+        margin-left: -125px;
+
+        @include breakpoint($mobile-76) {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin-left: 0px;
+            order: 2;
+        }
+    }
+
+}
+
+.slider__center {
+    position: relative;
+
+    @include breakpoint($mobile-76) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.slider__link {
+    display: flex;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    color: $white;
+
+    position: absolute;
+    bottom: 70px;
+    right: 38%;
+
+
+    transform: translate(-50%, 0);
+    transition: all .3s;
+
+    &:hover {
+        color: $oren;
+    }
+
+    @include breakpoint($mobile-76) {
+        width: 100%;
+        bottom: 0;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+
+}
+
+
+
+//СЛaИДЕР СТРЕЛКИ
+
+.slider__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    bottom: 70px;
+    right: 66%;
+
+
+    transform: translate(-50%, 0);
+
+    @include breakpoint($mobile-76) {
+
+        bottom: 45px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+}
+
+
+.button-prev,
+.button-prev2 {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    font-size: 0;
+    /*чтобы стрелки были по центу*/
+    color: transparent;
+
+    border: 0;
+    background: $grey-300;
+    cursor: pointer;
+
+    border-radius: 1%;
+
+    transition: all .3s;
+
+    transform: translate(0, 0);
+
+}
+
+.button-prev:after,
+.button-prev2:after {
+    content: "";
+    display: none;
+    width: 5px;
+    height: 5px;
+
+
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+}
+
+.button-prev:hover,
+.button-prev2:hover {
+    background: $oren;
+}
+
+.button-prev::before,
+.button-prev2::before {
+    content: "";
+    display: none;
+    width: 19px;
+    height: 25px;
+
+    border-left: 2px solid $black;
+    transform: rotate(-45deg);
+
+    position: absolute;
+    left: 16px;
+    top: 1px;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+
+}
+
+.button-prev:hover::before,
+.button-prev2:hover::before {
+    border-left: 0px solid $black;
+}
+
+.button-next,
+.button-next2 {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    font-size: 0;
+    /*чтобы стрелки были по центу*/
+    color: transparent;
+
+    border: 0;
+    background: $grey-300;
+    cursor: pointer;
+
+    border-radius: 1%;
+    transition: all .3s;
+
+    img {
+
+        transform: rotate(180deg);
+
+    }
+}
+
+.button-next:after,
+.button-next2:after  {
+    content: "";
+    display: none;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+
+
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+}
+
+.button-next:hover,
+.button-next2:hover {
+    background: $oren;
+}
+
+
+.button-next::before,
+.button-next2::before {
+    content: "";
+    display: none;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+
+    border-left: 2px solid $black;
+    transform: rotate(-45deg);
+
+    position: absolute;
+    left: 16px;
+    top: 1px;
+
+    margin: 0 auto;
+    transition: all .3s;
+
+
+}
+
+.button-next:hover::before,
+.button-next2:hover::before {
+    border-left: 0px solid $black;
+}

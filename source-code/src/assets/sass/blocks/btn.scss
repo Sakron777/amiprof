@@ -1,0 +1,78 @@
+.btn {
+    width: 100%;
+    max-width: 166px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: $black;
+
+
+    text-align: center;
+    padding: 11px 26px;
+    margin: 0 auto;
+
+
+    border: $b-orange;
+    border-radius: $br5;
+    transition: all .3s;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $oren;
+        color: $white;
+    }
+
+    &--right{
+        position: absolute;
+        right: 0;
+        bottom: -38px;
+        width: 100%;
+        max-width: 120px;
+        z-index: 2000;
+
+        @include breakpoint($tablet-bp) {
+            right: 50%;
+             left: 50%;
+            transform: translate(-50%, 0);
+
+        }
+    }
+
+    &--center{
+        position: absolute;
+        bottom: -20px;
+        right: 50%;
+        left: 50%;
+
+        transform: translate(-50%, 0);
+        z-index: 10000000;
+
+    }
+
+    &--oren{
+        max-width: 175px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 20px;
+
+
+        color: #FFFFFF;
+
+        background-color: #FD9913;
+
+    }
+
+
+
+}

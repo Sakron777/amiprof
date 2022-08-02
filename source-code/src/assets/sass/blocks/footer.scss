@@ -1,0 +1,273 @@
+.footer {
+    background-color: $black-100;
+    padding: 30px 10px 26px 10px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($mobile-76) {
+       justify-content: center;
+       flex-direction: column;
+    }
+}
+
+.footer__left {
+    display: flex;
+    margin-right: 10px;
+
+    @include breakpoint($mobile-76) {
+        margin-bottom: 30px;
+     }
+
+     @include breakpoint($mobile-br) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+     }
+
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 190px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include breakpoint($tablet-250) {
+        margin-right: 120px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 30px;
+    }
+
+    @include breakpoint($mobile-br) {
+        margin: 0 15px;
+
+     }
+}
+
+.footer__item-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 15px;
+
+    color: $white;
+}
+
+.footer__item-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 3px;
+    /* or 193% */
+
+    color: $grey-400;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all .3s;
+
+    &:hover {
+        text-decoration-line: underline;
+    }
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__right-form {
+    position: relative;
+}
+
+.footer__right-input {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 12px 0 12px 18px;
+
+    color: #DADADA;
+
+    background: $black-100;
+    border: 1px solid $white;
+    ;
+    border-radius: 3px;
+
+    outline: none;
+
+    &::placeholder {
+        color: #DADADA;
+    }
+
+}
+
+.footer__right-img {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    bottom: 10px;
+
+    transform: translate(-50%, -50%);
+}
+
+.footer__right-block {
+    display: flex;
+    margin-top: 30px;
+
+    @include breakpoint($mobile-br) {
+       flex-direction: column;
+       justify-content: center;
+
+    }
+
+}
+
+.footer__right-one {
+    display: flex;
+    flex-direction: column;
+    margin-right: 104px;
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 30px;
+    }
+
+    @include breakpoint($mobile-br) {
+        margin-right: 0px;
+     }
+
+}
+
+.footer__right-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 22px;
+
+
+
+    color: $white;
+    transition: all .3s;
+
+    &:hover {
+        text-decoration-line: underline;
+    }
+
+    @include breakpoint($mobile-br) {
+
+        text-align: center;
+     }
+}
+
+.footer__right-numb {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 22px;
+
+    color: $white;
+
+    @include breakpoint($mobile-br) {
+
+        text-align: center;
+     }
+}
+
+.footer__right-mail {
+    padding-right: 5px;
+}
+
+.footer__right-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: $white;
+
+    @include breakpoint($mobile-br) {
+        margin-bottom: 22px;
+
+        text-align: center;
+     }
+}
+
+.footer__right-city {
+    padding-right: 5px;
+}
+
+.footer__right-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right-phone {
+    padding-right: 5px;
+}
+
+.footer__copyright {
+    width: 100%;
+    padding: 53px 0 26px 0;
+    margin-top: 71px;
+    border-top: 1px solid $grey-400;
+}
+
+.footer__copyright-block {
+    display: flex;
+    justify-content: space-between;
+    div{
+        width: 260px;
+
+        @include breakpoint($mobile-76) {
+           display: none;
+         }
+    }
+
+    @include breakpoint($mobile-br) {
+        flex-direction: column;
+        justify-content: center;
+     }
+}
+
+.footer__copyright-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: $grey-400;
+    @include breakpoint($mobile-br) {
+        margin: 5px auto;
+        text-align: center;
+        width: 150px;
+     }
+}
+
+.footer__copyright-logo {
+    width: 100px;
+    @include breakpoint($mobile-br) {
+        margin: 0 auto;
+     }
+
+}

@@ -1,0 +1,30 @@
+.customers {
+    margin: 57px 0 93px 0;
+
+}
+
+.customers__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.customers__item {
+    display: inline-block;
+    align-items: center;
+    text-align: justify;
+
+    border: 1px solid $white-300;
+    padding: 60px 40px;
+}
+
+.customers__item-img {
+
+    @include breakpoint($mobile-32) {
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+}

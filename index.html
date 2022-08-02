@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/img/modal/4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@700&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&family=Poiret+One&family=Raleway:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <title>home</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="">
+
+
+
+
+<div class="page" id="page">
+
+   <!--header-->
+   <header class="header" id="header1">
+       <div class="container">
+           <div class="header__inner">
+       <div class="header__logo">
+           <img class="header__logo-svg" src="assets/img/header/logo.svg" alt="" data-scroll="#intro">
+       </div>
+   
+       <nav class="header__nav" id="nav">
+           <a class="header__nav-link" href="" data-scroll="#intro">О нас</a>
+           <a class="header__nav-link" href="" data-scroll="#services">Услуги</a>
+           <a class="header__nav-link" href="" data-scroll="#news">Новости</a>
+           <a class="header__nav-link" href="">Акции</a>
+           <a class="header__nav-link" href="" data-scroll="#slider">Документы</a>
+           <a class="header__nav-link" href="">Отзывы</a>
+           <a class="header__nav-link" href="" data-scroll="#footer">Контакты</a>
+       </nav>
+   
+       <div class="header__phone">
+           <img class="header__phone-img" src="assets/img/header/tel.svg" alt="">
+           <ul class="header-phone__spoller">
+               <li>
+                   <a class="header-phone__number" href="tel:83517778070">+7 (351) 777-80-70</a>
+               </li>
+   
+               <button class="header-phone__arrow active" type="button">
+                   <img src="assets/img/header/arrow.webp" alt="">
+               </button>
+   
+               <button class="header-body__btn" type="button" data-bs-toggle="modal" data-bs-target="#popupbell">Заказать
+                   звонок
+               </button>
+   
+   
+           <ul class="header-phone__list" style="display: none;">
+               <li>
+                   <a class="header-phone__number" href="tel:83517778070">+7 (351) 777-80-70</a>
+               </li>
+               <li>
+                   <a class="header-phone__number" href="tel:83517778070">+7 (351) 777-80-70</a>
+               </li>
+               <li>
+                   <a class="header-phone__number" href="tel:83517778070">+7 (351) 777-80-70</a>
+               </li>
+           </ul>
+       </ul>
+       </div>
+       <button class="nav__toggle" id="nav__toggl" type="button">
+           <span class="nav-oggle__item"></span>
+       </button>
+   </div>
+   
+   </div>
+   </header>
+   
+   <!--content-->
+
+
+   <main class="main">
+
+      <!--intro-->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div   class="intro__left">
+                    <h1 data-wow-delay=".2s" class="intro__left-title wow animate__fadeInLeft">охрана труда <br>
+                        пожарная езопасность
+                        обучение сотрудников
+                    </h1>
+                </div>
+    
+                <div class="intro__right">
+                    <img class="intro__right-img" src="assets/img/intro/3.webp" alt="human">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      <!--services-->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="title">наши услуги</h1>
+            <div class="services__inner">
+                <div class="services__item ">
+                    <div class="services__item-left">
+                        <img data-wow-delay=".2s" class="services__item-img wow animate__fadeInLeft" src="assets/img/services/1.svg" alt="">
+                        <img class="services__item-svg" src="assets/img/services/Vector 28.svg" alt="">
+    
+                    </div>
+    
+                    <div class="services__item-right">
+                        <h1 class="services__item-title">
+                            Промышленная безопасность
+                        </h1>
+    
+                        <p class="services__item-text">
+                            Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение
+                            предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды
+                            объектов.
+                        </p>
+    
+                        <a class="btn btn--right" href="">показать больше</a>
+                    </div>
+    
+                </div>
+    
+                <div class="services__item services__item--right">
+                    <div class="services__item-left services__item-left--right">
+                        <img data-wow-delay=".2s" class="services__item-img services__item-img--top wow animate__fadeInRight" src="assets/img/services/2.svg" alt="">
+                        <img class="services__item-svg services__item-svg--right" src="assets/img/services/Vector 25.svg"
+                            alt="">
+                        <img class="services__item-svg services__item-svg--bottom" src="assets/img/services/Vector 26.svg"
+                            alt="">
+                    </div>
+    
+                    <div class="services__item-right">
+                        <h1 class="services__item-title">
+                            охрана труда
+                        </h1>
+    
+                        <p class="services__item-text">
+                            Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение
+                            предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды
+                            объектов.
+                        </p>
+    
+                        <a class="btn btn--right" href="">показать больше</a>
+                    </div>
+    
+                </div>
+    
+                <div class="services__item">
+                    <div class="services__item-left">
+                        <img data-wow-delay=".2s" class="services__item-img services__item-img--top wow animate__fadeInLeft " src="assets/img/services/3.svg" alt="">
+                        <img class="services__item-svg2" src="assets/img/services/Vector 27.svg" alt="">
+                    </div>
+    
+                    <div class="services__item-right">
+                        <h1 class="services__item-title">
+                            обучение рабочих
+                        </h1>
+    
+                        <p class="services__item-text">
+                            Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение
+                            предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды
+                            объектов.
+                        </p>
+    
+                        <a class="btn btn--right" href="">показать больше</a>
+                    </div>
+    
+                </div>
+    
+                <div class="services__item services__item--right">
+                    <div class="services__item-left services__item-left--right">
+                        <img data-wow-delay=".2s" class="services__item-img wow animate__fadeInRight" src="assets/img/services/4.svg" alt="">
+                        <img class="services__item-svg2 services__item-svg2--left" src="assets/img/services/Vector 29.svg"
+                            alt="">
+                    </div>
+    
+                    <div class="services__item-right">
+                        <h1 class="services__item-title">
+                            Обучение лиц с ограниченными
+                            возможностями здоровья
+                        </h1>
+    
+                        <p class="services__item-text">
+                            Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение
+                            предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды
+                            объектов.
+                        </p>
+    
+                        <a class="btn btn--right" href="">показать больше</a>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+      <!--slider-->
+    <section class="slider">
+        <div class="container container--slider">
+            <div class="slider__pos">
+                <h1 class="title title--reviews">Отзывы клиентов</h1>
+                <div class="slider__inner">
+                    <div class="slider__block" id="Slider">
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider__right">
+                        <img class="slider__svg" src="assets/img/slide/1.webp" alt="">
+                    </div>
+                        <div class="slider__btn">
+                            <div>
+                                <button class="button-prev" type="button">
+                                    <img src="assets/img/slide/6.webp" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button class="button-next" type="button">
+                                    <img src="assets/img/slide/6.webp" alt="">
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="slider__center">
+                <a class="slider__link" href="">показать все</a>
+            </div>
+        </div>
+    </section>
+    
+      <!--project-->
+    <section class="project">
+        <div class="container container--two">
+        <h1 class="title title--project">проекты</h1>
+        <div class="project__inner">
+            <div class="project__item">
+                <div class="project__item-one">
+                    <time class="project__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <h1 class="title title--block">название проекта 1</h1>
+                </div>
+    
+                <div class="project__item-two">
+                    <div class="project__item-block">
+                        <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+    
+                <div class="project__item-three">
+                    <p class="project__item-text">Очень много текста примерно
+                        на три строчки, ибо больше
+                        никто читать не будет.</p>
+    
+                        <div class="project__item-pos">
+                        <a class="project__item-link" href="">
+                            <img src="assets/img/projects/2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project__item">
+                <div class="project__item-one">
+                    <time class="project__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <h1 class="title title--block">название проекта 2</h1>
+                </div>
+    
+                <div class="project__item-two">
+                    <div class="project__item-block">
+                        <img class="project__item-img" src="assets/img/projects/1.webp" alt="">
+                    </div>
+                </div>
+    
+                <div class="project__item-three">
+                    <p class="project__item-text">Очень много текста примерно
+                        на три строчки, ибо больше
+                        никто читать не будет.</p>
+    
+                        <div class="project__item-pos">
+                        <a class="project__item-link" href="">
+                            <img src="assets/img/projects/2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="project__item-all" href="">
+                все проекты
+                <img src="assets/img/projects/3.webp" alt="">
+            </a>
+        </div>
+    </div>
+    </section>
+    
+      <!--news-->
+    <section class="news" id="news">
+        <div class="news__color"></div>
+        <div class="container">
+            <div class="news__inner">
+    
+                <div class="news__photo">
+                    <h1 class="title title--news">рубрика важных новостей</h1>
+                        <img data-wow-delay=".2s" class="news__photo-img wow animate__fadeInRight" src="assets/img/category/1.webp" alt="">
+                </div>
+                <div class="news__item">
+                    <h1 class="news__item-title">важная Новость</h1>
+                    <time class="news__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="news__item-text">Очень много текста примерно на три строчки, ибо больше никто читать не будет.</p>
+    
+                        <a class="news__item-link" href="">
+                            <img src="assets/img/projects/2.webp" alt="">
+                        </a>
+    
+                </div>
+    
+                <div class="news__item news__item--linear">
+                    <h1 class="news__item-title">важная Новость</h1>
+                    <time class="news__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="news__item-text">Очень много текста примерно на три строчки, ибо больше никто читать не будет.</p>
+    
+                        <a class="news__item-link" href="">
+                            <img src="assets/img/projects/2.webp" alt="">
+                        </a>
+                </div>
+    
+    
+                <div class="news__item">
+                    <h1 class="news__item-title">важная Новость</h1>
+                    <time class="news__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="news__item-text">Очень много текста примерно на три строчки, ибо больше никто читать не будет.</p>
+    
+                        <a class="news__item-link" href="">
+                            <img src="assets/img/projects/2.webp" alt="">
+                        </a>
+    
+                </div>
+                <a class="news__item-all" href="">
+                    все проекты
+                </a>
+            </div>
+        </div>
+    </section>
+    
+      <!--questions-->
+    <section class="questions">
+        <div class="container">
+            <div class="questions__block">
+                <img class="questions__block__oren" src="assets/img/questions/4.webp" alt="">
+                <img class="questions__block__linear" src="assets/img/questions/3.svg" alt="">
+    
+                <h1 class="title title--questions">Вопросы?</h1>
+                <p class="questions__block-text">Оставьте заявку и мы с Вами свяжемся</p>
+    
+                <form class="questions__block-cont" action="/" method="post">
+                    <div class="questions__block-group">
+                        <input class="questions__block-input" type="text" name="name" placeholder="Ваше Имя">
+                    </div>
+    
+                    <div class="questions__block-group">
+                        <input class="questions__block-input" type="tel" name="phone" placeholder="+7 (123) 456 78 89">
+                    </div>
+                </form>
+                <button class="btn btn--center" type="button" data-bs-toggle="modal"
+                    data-bs-target="#popupapp">оставить заявку
+                </button>
+                <img class="questions__block__left" src="assets/img/questions/1.svg" alt="">
+                <img class="questions__block__right" src="assets/img/questions/2.svg" alt="">
+            </div>
+        </div>
+    </section>
+    
+      <!--rticles-->
+    <section class="articles">
+        <div class="container">
+            <h1 class="title title--articles">Полезные статьи</h1>
+            <div class="articles__inner">
+                <div class="articles__item">
+                    <h1 class="articles__item-title">Заголовок</h1>
+                    <time class="articles__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="articles__item-text">Тут текст на несколько строк Тут текст
+                        на несколько строк Тут текст точно
+                        на несколько строк Тут текст </p>
+                </div>
+    
+                <div class="articles__item">
+                    <h1 class="articles__item-title">Заголовок</h1>
+                    <time class="articles__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="articles__item-text">Тут текст на несколько строк Тут текст
+                        на несколько строк Тут текст точно
+                        на несколько строк Тут текст </p>
+                </div>
+    
+                <div class="articles__item">
+                    <h1 class="articles__item-title">Заголовок</h1>
+                    <time class="articles__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="articles__item-text">Тут текст на несколько строк Тут текст
+                        на несколько строк Тут текст точно
+                        на несколько строк Тут текст </p>
+                </div>
+    
+                <div class="articles__item">
+                    <h1 class="articles__item-title">Заголовок</h1>
+                    <time class="articles__item-date"  pubdate datetime="<12/2020>">12/2020</time>
+                    <p class="articles__item-text">Тут текст на несколько строк Тут текст
+                        на несколько строк Тут текст точно
+                        на несколько строк Тут текст </p>
+                </div>
+                <a class="articles__all" href="">все статьи</a>
+            </div>
+        </div>
+    </section>
+    
+      <!--slider-->
+    <section class="slider" id="slider">
+        <div class="container container--slider">
+            <div class="slider__pos">
+                <h1 class="title title--certificates">сертификаты</h1>
+                <div class="slider__inner">
+                    <div class="slider__block" id="Slider2">
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slider__carusel">
+                                <img class="slider__carusel-img" src="assets/img/slide/3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider__right">
+                        <img class="slider__svg slider__svg--two" src="assets/img/slide/2.webp" alt="">
+                    </div>
+                        <div class="slider__btn">
+                            <div>
+                                <button class="button-prev2" type="button">
+                                    <img src="assets/img/slide/6.webp" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button class="button-next2" type="button">
+                                    <img src="assets/img/slide/6.webp" alt="">
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="slider__center">
+                <a class="slider__link" href="">показать все</a>
+            </div>
+        </div>
+    </section>
+    
+      <!--customers-->
+    <section class="customers">
+        <div class="container">
+            <h1 class="title title--customers">Наши клиенты</h1>
+            <div class="customers__inner">
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/1.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/2.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/3.webp" alt="">
+                </div>
+    
+                <div class="customers__item ">
+                    <img class="customers__item-img" src="/assets/img/customers/4.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/5.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/6.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/7.webp" alt="">
+                </div>
+    
+                <div class="customers__item">
+                    <img class="customers__item-img" src="/assets/img/customers/8.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+   <!--footer-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__item">
+                        <h1 class="footer__item-title">О нас</h1>
+                        <a href="" class="footer__item-link">Новости</a>
+                        <a href="" class="footer__item-link">Статьи</a>
+                        <a href="" class="footer__item-link">Сертификаты</a>
+                        <a href="" class="footer__item-link">Объекты</a>
+                        <a href="" class="footer__item-link">Склад</a>
+                    </div>
+    
+                    <div class="footer__item">
+                        <h1 class="footer__item-title">Каталог</h1>
+                        <a href="" class="footer__item-link">Прайсы</a>
+                        <a href="" class="footer__item-link">Акции</a>
+                    </div>
+    
+                    <div class="footer__item">
+                        <h1 class="footer__item-title">Контакты</h1>
+                    </div>
+                </div>
+    
+                <div class="footer__right">
+                    <form class="footer__right-form" action="/" method="post">
+                        <input class="footer__right-input" type="text" name="name" placeholder="Поиск ">
+                        <img class="footer__right-img" src="assets/img/footer/4.svg" alt="">
+                    </form>
+                    <div class="footer__right-block">
+                        <div class="footer__right-one">
+    
+                            <a class="footer__right-link" href="mailto:hello@stkrost.ru">
+                                <img class="footer__right-mail" src="assets/img/footer/3.svg" alt="mail">
+                                hello@stkrost.ru
+                            </a>
+    
+                            <p class="footer__right-text">
+                                <img class="footer__right-city" src="assets/img/footer/1.svg" alt="phone">
+                                г. Челябинск
+                            </p>
+                        </div>
+    
+                        <div class="footer__right-two">
+                            <a class="footer__right-numb" href="tel:83517000771">
+                                <img class="footer__right-phone" src="assets/img/footer/2.svg" alt="phone">
+                                +7 (351) 700-07-71
+                            </a>
+    
+                            <button class="btn btn--oren" type="button" data-bs-toggle="modal"
+                                data-bs-target="#popupapp3">Обратный звонок
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__copyright">
+                <div class="footer__copyright-block">
+                    <p class="footer__copyright-text">© 2020 Universe, Все права защищены</p>
+                    <img class="footer__copyright-logo" src="assets/img/copy/logo.webp" alt="logo">
+                    <div class=""></div>
+                </div>
+            </div>
+        </div>
+    </footer></div>
+<div class="modal fade" id="popupbell" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/modal/1.svg" alt="">
+        </button>
+
+
+        <section class="modal__bell">
+            <h1 class="modal__bell-title">Заказать звонок</h1>
+
+           <form action="/" method="post">
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="text" name="name" placeholder= "Имя">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="email" name="email" placeholder="Ваш e-mail">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="tel" name="phone" placeholder="Ваш номер телефона">
+            </div>
+
+            <div class="modal__bell-group">
+             <textarea  name="text" cols="60" rows="3" id="input-pluses" class="modal__bell-control" placeholder="Сообщение"></textarea>
+           </div>
+           </form>
+           <button type="button" class="btn">Отправить</button>
+        </section>
+
+    </div>
+</div>
+</div><div class="modal fade" id="popupapp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/modal/1.svg" alt="">
+        </button>
+
+
+        <section class="modal__bell">
+            <h1 class="modal__bell-title">Заказать звонок</h1>
+
+           <form action="/" method="post">
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="text" name="name" placeholder= "Имя">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="email" name="email" placeholder="Ваш e-mail">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="tel" name="phone" placeholder="Ваш номер телефона">
+            </div>
+
+            <div class="modal__bell-group">
+             <textarea  name="text" cols="60" rows="3" id="input-pluses" class="modal__bell-control" placeholder="Сообщение"></textarea>
+           </div>
+           </form>
+           <button type="button" class="btn">Отправить</button>
+        </section>
+
+    </div>
+</div>
+</div><div class="modal fade" id="popupapp3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <button class="modal__close" type="button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="assets/img/modal/1.svg" alt="">
+        </button>
+
+
+        <section class="modal__bell">
+            <h1 class="modal__bell-title">Заказать звонок</h1>
+
+           <form action="/" method="post">
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="text" name="name" placeholder= "Имя">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="email" name="email" placeholder="Ваш e-mail">
+            </div>
+
+            <div class="modal__bell-group">
+                <span class="modal__bell-icon"></span>
+                <input class="modal__bell-input" type="tel" name="phone" placeholder="Ваш номер телефона">
+            </div>
+
+            <div class="modal__bell-group">
+             <textarea  name="text" cols="60" rows="3" id="input-pluses" class="modal__bell-control" placeholder="Сообщение"></textarea>
+           </div>
+           </form>
+           <button type="button" class="btn">Отправить</button>
+        </section>
+
+    </div>
+</div>
+</div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>

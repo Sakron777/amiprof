@@ -1,0 +1,93 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+
+html{
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
+
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+
+    font-family: 'Roboto', 'Montserrat', 'Lato', sans-serif;
+    font-size: 14px;
+    background-color: $white;
+    color: $black;
+
+    line-height: 1.5;
+    //для того, чтобы нельзя было скролить при модельном окне
+
+
+   &.show-sidebar{
+       overflow: hidden;
+
+   }
+
+
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all .3s;
+
+    &:hover{
+        text-shadow: $ts;
+    }
+}
+
+//bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+
+//noslider
+@import "../../../node_modules/nouislider/dist/nouislider";
+
+//slick
+@import "../../../node_modules/slick-carousel/slick/slick";
+
+
+
+
+//bloks
+@import "blocks/burger";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/intro";
+@import "blocks/services";
+@import "blocks/slider";
+@import "blocks/project";
+@import "blocks/news";
+@import "blocks/questions";
+@import "blocks/articles";
+@import "blocks/customers";
+@import "blocks/footer";
+
+@import "blocks/main";
+@import "blocks/page";
+
+@import "blocks/btn";
+@import "blocks/modal";
+@import "blocks/mbell";
+@import "blocks/title";
+
+
+//vendor
+
+
